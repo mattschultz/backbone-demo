@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>Backbone Demo</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+  <link rel="stylesheet" href="stylesheets/base.css" />
+  <link rel="stylesheet" href="stylesheets/skeleton.css" />
+  <link rel="stylesheet" href="stylesheets/layout.css" />
+  <link rel="stylesheet" href="stylesheets/main.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Backbone.js Demo</h1>
+            
+    <a id="new_post" href="#new_post">new post</a>
+
+    <form action="#" onsubmit="return false">
+      <h2>New Post</h2>
+      <input type="text" name="title" placeholder="title" />
+      <textarea name="body" placeholder="body"></textarea>
+      <input type="submit" />
+    </form>
+
+    <h2>Listing Posts</h2>
+  </div>
+  
+  <script id="post-template" type="text/x-handlebars-template">
+    <h3>{{title}}</h3>
+    <p>{{body}}</p>
+  </script>
+    
+  <script src="javascripts/jquery-1.6.1.min.js"></script>
+  <script src="javascripts/underscore-min.js"></script>
+  <script src="javascripts/backbone-min.js"></script>
+  <script src="javascripts/backbone.localStorage-min.js"></script>
+  <script src="javascripts/handlebars.1.0.0.beta.3.js"></script>
+  <script src="javascripts/main.js"></script>
+</body>
+</html>
